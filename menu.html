@@ -1,82 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pakobylky.cz</title>
-    <link rel="icon" href="https://i.ibb.co/4F4HR4D/image.png" type="image/x-icon">
     <style>
-        /* Základní styly */
         body {
-            font-family: 'Calibri', cursive, sans-serif;
-            line-height: 1.6;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #ffd700;
-            color: #333;
+            background-color: #f7f7f7;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
-
         .container {
-            width: 80%;
-            max-width: 600px;
-            background-color: #fff;
+            text-align: center;
+            background-color: #ffffff;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-
-        .link {
-            display: block;
-            margin-bottom: 10px;
-            padding: 15px;
-            text-decoration: none;
-            color: #333;
-            background-color: #4CAF50;
-            border-radius: 5px;
-            text-align: center;
-            font-size: 1.2em;
-            transition: background-color 0.3s ease;
-        }
-
-        .link:hover {
-            background-color: #45a049;
-        }
-
-        .menu {
+        .container h1 {
             margin-bottom: 20px;
-        }
-
-        .menu a {
-            display: block;
-            margin-bottom: 10px;
-            padding: 15px;
-            text-decoration: none;
             color: #333;
-            background-color: #4CAF50;
-            border-radius: 5px;
-            text-align: center;
-            font-size: 1.2em;
-            transition: background-color 0.3s ease;
         }
-
-        .menu a:hover {
-            background-color: #45a049;
+        .link-button {
+            display: block;
+            background-color: #004d40;
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            margin: 10px auto; /* Auto margin for centering */
+            border-radius: 5px;
+            font-size: 18px;
+            width: 250px; /* Set fixed width */
+            transition: background-color 0.3s;
+            text-align: center; /* Center align text */
+        }
+        .link-button:hover {
+            background-color: #00362d;
+        }
+        .link-button:active {
+            background-color: #00362d;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Nové menu -->
-        <div class="menu">
-            <a href="index.html">Pakobylky</a>
-            <a href="/strasilky/index.html">Strašilky</a>
-            <a href="/kudlanky/index.html">Kudlanky</a>
-            <a href="/fotky/index.html">Fotky</a>
-            <a href="https://pakobylkycz123.proboards.com/board/1/general-discussion">Forum</a>
-
+        <h1>Menu</h1>
+        <a href="index.html" class="link-button">Pakobylky</a>
+        <a href="/strasilky/index.html" class="link-button">Strašilky</a>
+        <a href="/kudlanky/index.html" class="link-button">Kudlanky</a>
+        <a href="https://pakobylkycz123.proboards.com/board/1/general-discussion" class="link-button">Forum</a>
+    </div>
 </body>
 </html>
+
