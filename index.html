@@ -60,6 +60,18 @@
             border-radius: 5px;
         }
 
+        .menu-icon {
+            display: none;
+            font-size: 30px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+        }
+
         section {
             padding: 20px;
             margin: 0 auto;
@@ -87,9 +99,25 @@
         }
 
         @media (max-width: 768px) {
+            .menu {
+                display: none;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .menu-icon {
+                display: block;
+                text-align: right;
+                padding-right: 20px;
+            }
+
             nav ul li {
                 display: block;
                 margin: 10px 0;
+            }
+
+            .menu.active {
+                display: flex;
             }
         }
     </style>
@@ -98,7 +126,8 @@
     <header>
         <h1>Pakobylky.cz</h1>
         <nav>
-            <ul>
+            <div class="menu-icon" onclick="redirect()">&#9776;</div>
+            <ul class="menu">
                 <li><a href="index.html">Pakobylky</a></li>
                 <li><a href="/strasilky/index.html">Strašilky</a></li>
                 <li><a href="/kudlanky/index.html">Kudlanky</a></li>
@@ -120,7 +149,6 @@
             <li><strong>Pakobylka lupenitka:</strong> ostružiník, jahodník, listy dubu, buku a lípy</li>
             <li><strong>Pakobylka vyzáblá:</strong> ostružiník, maliník, růže, jahodník</li>
             <li><strong>Pakobylka indická:</strong> ostružiník, maliník, růže (šípek), břečťan, hloh</li>
-         
         </ul>
     </section>
 
@@ -148,6 +176,13 @@
     </section>
 
   
+
+    <script>
+        function redirect() {
+            window.location.href = "menu.html";
+        }
+    </script>
 </body>
 </html>
+
 
